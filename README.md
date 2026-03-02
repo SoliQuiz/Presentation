@@ -176,13 +176,15 @@ style: |
     <p><strong>SoliQuiz</strong> est un projet de fin de formation, conçu pour répondre aux besoins concrets du centre digital <strong>Solicode</strong>.</p>
     <p>Il s'agit d'une plateforme centralisée pour la <strong>création, le passage et l'analyse de QCM</strong>.</p>
   </div>
+
+  ---
   <div class="context-card problem-card">
     <h4>⚠️ Problématique</h4>
     <ul>
-      <li>Saisie manuelle des notes (Google Forms → SoliLMS)</li>
-      <li>Aucune liaison QCM ↔ objectifs pédagogiques</li>
-      <li>Interface non adaptée au mobile</li>
-      <li>Absence de feedback détaillé pour les étudiants</li>
+      <li>**Perte de temps logistique** : Les formateurs doivent ressaisir manuellement les notes de Google Forms vers la plateforme centrale, SoliLMS.</li>
+      <li>**Rupture pédagogique** : Manque d'intégration directe entre les QCM, les sessions de cours spécifiques, et les micro-objectifs (SoliLMS).</li>
+      <li>**Insatisfaction des étudiants** : Interfaces non adaptées au mobile, feedback "sec" sans explication (un simple score type "12/20"), risque de perte des données en cas de déconnexion.</li>
+      <li>**Gestion asymétrique** : La direction pédagogique ne possède pas de vue globale standardisée permettant de piloter facilement et en temps réel le taux de réussite global des cohortes.</li>
     </ul>
   </div>
 
@@ -196,6 +198,7 @@ style: |
       <li><strong>Administrateur :</strong> Superviser & piloter la plateforme</li>
     </ul>
   </div>
+  
   <div class="context-card">
     <h4>✅ Objectifs</h4>
     <ul>
@@ -294,13 +297,22 @@ style: |
 ## Branche Fonctionnelle : Design Thinking
 ### 3. IDÉATION
 
-<div class="img-container">
-  <div class="dt-card" style="border-top-color: #f39c12;">
-    <h4>Solutions retenues</h4>
-    <p>• <strong>Timer dynamique</strong> par catégorie de question.</p>
-    <p>• <strong>Dashboard</strong> temps réel pour le suivi des formateurs.</p>
-    <p>• <strong>Auto-sauvegarde</strong> des réponses en cours (résilience réseau).</p>
-    <p>• <strong>Feedback détaillé</strong> avec correction et explication après soumission.</p>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 10px;">
+  <div class="persona-card" style="border-top-color: #088dc7; background: linear-gradient(135deg, #f0faff 0%, #ffffff 100%);">
+    <strong>🔄 SoliLMS Sync Engine</strong>
+    <p>Automatisation totale : synchronisation en temps réel des scores et des micro-objectifs vers le profil apprenant SoliLMS.</p>
+  </div>
+  <div class="persona-card" style="border-top-color: #27ae60; background: linear-gradient(135deg, #f0fff4 0%, #ffffff 100%);">
+    <strong>📅 Daily Streak System</strong>
+    <p>Engagement quotidien : questionnaires courts ("Daily Quiz") pour valider les acquis chaque matin et booster la rétention.</p>
+  </div>
+  <div class="persona-card" style="border-top-color: #f39c12; background: linear-gradient(135deg, #fff9f0 0%, #ffffff 100%);">
+    <strong>📡 Résilience Offline-First</strong>
+    <p>Auto-sauvegarde locale systématique : aucune donnée n'est perdue en cas de coupure réseau pendant un QCM.</p>
+  </div>
+  <div class="persona-card" style="border-top-color: #9b59b6; background: linear-gradient(135deg, #fdf2ff 0%, #ffffff 100%);">
+    <strong>🧠 Adaptive Feedback</strong>
+    <p>Correction pédagogique augmentée : explications contextuelles ciblées sur l'erreur pour transformer l'échec en apprentissage.</p>
   </div>
 </div>
 
@@ -409,7 +421,7 @@ style: |
 ## 7. Conclusion
 
 - **Objectifs atteints** : Application QCM fonctionnelle, responsive et intégrée à SoliLMS.
-- **Compétences** : Maîtrise du cycle Agile (Scrum), de la méthodologie 2TUP et de la stack Full-stack Laravel.
+- **Compétences** : Maîtrise du cycle Agile (Scrum), de la méthodologie 2TUP, Design Thinking et de la stack Full-stack Laravel.
 - **Apport pédagogique** : Remplacement complet de Google Forms par un outil interne centré sur les besoins des formateurs et étudiants.
 - **Perspectives** : Intégration d'un module d'IA pour l'analyse prédictive des performances et la génération automatique de QCM.
 
