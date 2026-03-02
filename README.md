@@ -181,10 +181,10 @@ style: |
   <div class="context-card problem-card">
     <h4>⚠️ Problématique</h4>
     <ul>
-      <li>**Perte de temps logistique** : Les formateurs doivent ressaisir manuellement les notes de Google Forms vers la plateforme centrale, SoliLMS.</li>
-      <li>**Rupture pédagogique** : Manque d'intégration directe entre les QCM, les sessions de cours spécifiques, et les micro-objectifs (SoliLMS).</li>
-      <li>**Insatisfaction des étudiants** : Interfaces non adaptées au mobile, feedback "sec" sans explication (un simple score type "12/20"), risque de perte des données en cas de déconnexion.</li>
-      <li>**Gestion asymétrique** : La direction pédagogique ne possède pas de vue globale standardisée permettant de piloter facilement et en temps réel le taux de réussite global des cohortes.</li>
+      <li>**Aveuglement pédagogique** : Manque de visibilité en temps réel sur l'acquisition des compétences (scores déconnectés des objectifs).</li>
+      <li>**Invisibilité des lacunes** : Incapacité technique d'associer les questions aux micro-objectifs pédagogiques.</li>
+      <li>**Stagnation de l'apprentissage** : Feedback "sec" sans explications, limitant les axes d'amélioration.</li>
+      <li>**Rupture administrative** : Report manuel chronophage vers SoliLMS et fragmentation de l'expérience (pas de mobile).</li>
     </ul>
   </div>
 
@@ -275,19 +275,24 @@ style: |
 ## Branche Fonctionnelle : Design Thinking
 ### 2. DÉFINITION
 
-<div class="img-container">
-  <div class="dt-card" style="border-top-color: #f39c12;">
-    <h4>Cadrage du problème (HMW)</h4>
-    <div style="display: grid; grid-template-columns: 1fr; gap: 10px; margin-top: 10px;">
-      <div style="background: white; padding: 12px; border-radius: 8px; border-left: 4px solid #088dc7; font-size: 0.9em;">
-        <strong>🧑‍🏫 Formateurs :</strong> Comment générer des QCM par objectif en un clic avec correction instantanée ?
-      </div>
-      <div style="background: white; padding: 12px; border-radius: 8px; border-left: 4px solid #9b59b6; font-size: 0.9em;">
-        <strong>🎓 Apprenants :</strong> Comment garantir une expérience mobile fluide et un feedback pédagogique approfondi ?
-      </div>
-      <div style="background: white; padding: 12px; border-radius: 8px; border-left: 4px solid #27ae60; font-size: 0.9em;">
-        <strong>🔧 Admin :</strong> Comment simplifier la gestion des candidats et le pilotage global des performances ?
-      </div>
+<div class="dt-card" style="border-top-color: #e74c3c; margin-top: 10px;">
+  <h4 style="color: #e74c3c;">Le Problème Central : L'aveuglement pédagogique</h4>
+  <p style="font-size: 0.95em; line-height: 1.4;">
+    Provoqué par l'utilisation d'outils génériques et non intégrés. Les formateurs et apprenants manquent de <strong>visibilité en temps réel</strong> sur l'acquisition des compétences car les scores sont déconnectés des objectifs précis.
+  </p>
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 15px;">
+    <div style="background: white; padding: 10px; border-radius: 8px; border-left: 4px solid #e74c3c; font-size: 0.8em;">
+      <strong>🔍 Invisibilité des lacunes</strong><br>Incapacité d'associer les questions aux micro-objectifs.
+    </div>
+    <div style="background: white; padding: 10px; border-radius: 8px; border-left: 4px solid #e74c3c; font-size: 0.8em;">
+      <strong>📉 Stagnation (Feedback)</strong><br>Notes "sèches" sans explications ni analyse d'erreurs.
+    </div>
+    <div style="background: white; padding: 10px; border-radius: 8px; border-left: 4px solid #e74c3c; font-size: 0.8em;">
+      <strong>🔄 Rupture Administrative</strong><br>Report manuel vers SoliLMS, chronophage et risqué.
+    </div>
+    <div style="background: white; padding: 10px; border-radius: 8px; border-left: 4px solid #e74c3c; font-size: 0.8em;">
+      <strong>📱 Fragmentation UX</strong><br>Multiplication d'outils et interface mobile inadaptée.
     </div>
   </div>
 </div>
